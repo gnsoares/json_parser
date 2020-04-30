@@ -6,7 +6,7 @@ void yyerror(char *c);
 int yylex(void);
 %}
 
-%token string nan number true false null colon comma open_curly close_curly open_square close_square
+%token string number true false null colon comma open_curly close_curly open_square close_square
 
 %%
 
@@ -37,6 +37,5 @@ void yyerror(char *s) {
 
 int main() {
   yyparse();
-    return 0;
-
+  return 0;
 }
